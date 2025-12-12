@@ -176,6 +176,10 @@ nav {
 }
 
 /* categories */
+.row-cols-7 > * {
+  flex: 0 0 calc(100% / 7);
+  max-width: calc(100% / 7);
+}
 .category .customCard p {
   color: var(--darkTanBrown);
   font-family: var(--secondaryFont);
@@ -187,7 +191,7 @@ nav {
   transition: transform 0.3s ease-in-out;
 }
 .category .customCard:hover img {
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 
 /* arriavl & products */
@@ -331,4 +335,96 @@ input:focus {
 .last {
     padding-left: 20px;
     border-left: 2px solid var(--Sandcastle);
+}
+@media screen and (max-width: 1199px) {
+  h2 {
+    font-size: 36px;
+  }
+  .navbar-brand {
+    margin-right: 20px;
+  }
+  .navbar-nav {
+    gap: 10px;
+  }
+  .nav-link {
+    font-size: 14px !important;
+  }
+  .navIcon {
+    margin-left: 5px;
+  }
+  .aboutUs .customCard figure img {
+    width: 100%;
+  }
+  .footcard2 {
+    border: none;
+  }
+  .footcard2 img {
+    max-width: 150px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .promotionMsg a {
+    font-size: 14px;
+  }
+  .aboutUs h2 {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 577px) {
+  p {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .aboutUs h2 {
+    font-size: 18px;
+  }
+  .footCard1 {
+    border-right: none;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--Sandcastle);
+  }
+  .footcard2 {
+    border-right: none;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--Sandcastle);
+  }
+  .footCard {
+    text-align: center;
+  }
+  .contactForm {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  .contactForm p {
+    font-size: 32px;
+  }
+  .copyrightContainer a{
+    font-size: 10px;
+  }
+  .copyrightContainer {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .copyrightRightPart {
+    padding: 0;
+  }
+  .category .row {
+    flex-direction: column;
+  }
+  .newArrival .row {
+    flex-direction: column;
+  }
+  .newArrival .productCard {
+    text-align: center;
+  }
+  
 }
