@@ -426,5 +426,7 @@ input:focus {
   .newArrival .productCard {
     text-align: center;
   }
-  
+  input::placeholder {
+    font-size: 12px;
+  }
 }
